@@ -42,6 +42,15 @@
 };
 
 / {
+    macros {
+        doubleBracket: doubleBracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>;
+            label = "DOUBLEBRACKET";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
