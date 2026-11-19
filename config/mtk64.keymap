@@ -49,6 +49,13 @@
             bindings = <&kp LBKT &kp RBKT &kp LEFT_ARROW>;
             label = "DOUBLE";
         };
+
+        AICopy: AICopy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(V) &kp LC(A) &kp LC(C)>;
+            label = "AICOPY";
+        };
     };
 
     keymap {
